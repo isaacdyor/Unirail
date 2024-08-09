@@ -3,10 +3,10 @@ import { VariantProps, cva } from "class-variance-authority";
 import { LogoIcon } from "@/components/logo/LogoIcon";
 import { cn } from "@/lib/utils";
 
-const logoVariants = cva("flex items-center gap-1", {
+const logoVariants = cva("flex items-center gap-2", {
   variants: {
     size: {
-      default: "text-3xl",
+      default: "text-xl",
       sm: "text-2xl",
       lg: "text-4xl",
     },
@@ -19,7 +19,7 @@ const logoVariants = cva("flex items-center gap-1", {
 const logoIconVariants = cva("", {
   variants: {
     size: {
-      default: "h-8 w-8",
+      default: "h-6 w-6",
       sm: "h-6 w-6",
       lg: "h-10 w-10",
     },
