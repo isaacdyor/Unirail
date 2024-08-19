@@ -5,7 +5,6 @@ import * as React from "react";
 
 import { cn } from "@/lib/utils";
 
-import { Button } from "@/components/ui/button";
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -16,17 +15,12 @@ import {
 import { Logo } from "../logo";
 
 import { navMenu } from "@/constants/nav";
-import { HamburgerButton } from "./HamburgerButton";
-import { MobileMenu } from "./MobileMenu";
-import { NavButtons } from "./NavButtons";
+import { HamburgerButton } from "./hamburger-button";
+import { MobileMenu } from "./mobile-menu";
+import { NavButtons } from "./nav-buttons";
 
-export function Nav() {
-  const isUserLoading = false;
-  const isLoggedIn = false;
-
+export const Nav = () => {
   const [open, setOpen] = React.useState(false);
-
-  const baseUrl = process.env.NEXT_PUBLIC_APP_URL;
 
   return (
     <div className="sticky top-0 z-40 transform border-b">
@@ -66,7 +60,7 @@ export function Nav() {
       <MobileMenu open={open} setOpen={setOpen} navMenu={navMenu} />
     </div>
   );
-}
+};
 
 const ListItem = React.forwardRef<
   React.ElementRef<"a">,

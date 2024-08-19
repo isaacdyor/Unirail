@@ -1,6 +1,6 @@
 import React from "react";
 import { VariantProps, cva } from "class-variance-authority";
-import { LogoIcon } from "@/components/logo/LogoIcon";
+import { LogoIcon } from "@/components/logo/logo-icon";
 import { cn } from "@/lib/utils";
 
 const logoVariants = cva("flex items-center gap-2", {

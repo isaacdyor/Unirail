@@ -4,7 +4,7 @@ import { Dispatch, SetStateAction } from "react";
 
 import { DEFAULT_EASE } from "@/lib/animations";
 import { Logo } from "../logo";
-import { NavButtons } from "./NavButtons";
+import { NavButtons } from "./nav-buttons";
 import { X } from "lucide-react";
 
 interface MenuItemType {
